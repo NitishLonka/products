@@ -1,0 +1,19 @@
+<h4 style="font-weight:600;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;text-align: center;margin:1rem;">Products</h4>
+<div >
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr style="background-color: #DAE4EC;">
+                <th><h6 style="font-weight:700;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Name</h6></th>
+                <th><h6 style="font-weight:700;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Price</h6></th>
+                <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td><h6 style="font-weight:600;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">{{product.name}}</h6></td>
+                    <td><h6 style="font-weight:600;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">${{product.price}}</h6></td>
+                    <td><a [routerLink]="['/details',product.productid]" class="btn btn-primary">view details</a></td>
+                    </tr>
+                </tbody>
+        </table>
+        </div>

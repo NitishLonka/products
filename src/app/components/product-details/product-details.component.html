@@ -1,0 +1,23 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm">
+        <div style="display: flex;flex-direction:row">
+            <div style="margin:1rem;">
+                <img src={{prod.url}}>
+            </div>
+            <div style="display: flex;flex-direction:column;margin:1rem;">
+                <h3>{{prod.name}}</h3>
+                <h4>${{prod.price}}</h4>
+                <h5>{{prod.description}} and phone is yours.</h5>
+                <a [routerLink]="['/products']" class="btn btn-primary" style="background-color: rgb(173, 228, 128);color: black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-top: 1rem;font-weight: 600;">Back to Products</a>
+            </div>
+            </div>
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
+  </div>
+
